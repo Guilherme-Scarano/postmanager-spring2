@@ -1,0 +1,44 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		
+		<link rel="stylesheet"
+			  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			  crossorigin="anonymous">
+			
+		 <link rel="stylesheet" 
+		       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js"
+		        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		        crossorigin="anonymous">
+		</script>
+		
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+		        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+		        crossorigin="anonymous">
+		</script>
+		
+		<title>Post Manager</title>
+	</head>
+	<body>
+		<div class="container my-4 text-dark">
+			<h1>Post Manager</h1>
+			
+			<a th:href="@{/users/form}" 
+			   class="btn btn-secondary col-3">Adicionar Usuário</a>
+			<a th:href="@{/filiais/form}" 
+			   class="btn btn-warning col-3">Adicionar Filial</a>
+			<a th:href="@{/cidades/form}" 
+			   class="btn btn-success col-3">Adicionar Cidade</a>
+			<a th:href="@{/users}" 
+			   class="btn btn btn-outline-secondary btn-sm  col-3">Usuário</a>
+			<a th:href="@{/filiais}" 
+			   class="btn btn-outline-warning btn-sm  col-3">Filiais</a>
+			<a th:href="@{/cidades}" 
+			   class="btn btn-outline-success btn-sm  col-3">Cidades</a>
+			 
+		</div>
+	</body>
+</html>
